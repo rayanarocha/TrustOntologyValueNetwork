@@ -1,0 +1,1606 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://oracowl.ppgcc.ufersa.edu.br/tvn"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://oracowl.ppgcc.ufersa.edu.br/tvn">
+    <Prefix name="" IRI="http://oracowl.ppgcc.ufersa.edu.br/tvn#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="tvn" IRI="http://oracowl.ppgcc.ufersa.edu.br/tvn#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="regra" IRI="http://oracowl.ppgcc.ufersa.edu.br/tvn"/>
+    <Declaration>
+        <Class IRI="#AltoRisco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atividade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtorComposto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Avaliacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AvaliacaoDaConfianca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AvaliacaoRisco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaixoRisco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Benevolencia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoaVontade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Certa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competencia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comprar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConfiaAbsolutamente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConfiaModeradamente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confiabilidade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confiado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confiador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confianca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConfiancaNeutra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConfiancaTraida"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConfiancaValidada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Constancia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Credibilidade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crenca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrencaAnterior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrencaAtual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decisao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesconfiaAbsolutamente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesconfiaModeradamente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dimensao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elementar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Errada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fornecer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Honestidade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Integridade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Justica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mediacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediadorDeConfianca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedioRisco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Papel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Previsibilidade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SegmentoDeMercado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transportar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assume"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#atualiza"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#avalia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#corrige"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deposita"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eAssumidoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eAtualizadaPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eContidaEm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eCorrigidaPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eDepositada"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eDesempenhadaPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eEstimada"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eReforcadaPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estima"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reforca"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#riscoEImpactadoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#riscoImpacta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tarefaImpacta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#traefaEImpactadaPor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AltoRisco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Benevolencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoaVontade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Certa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Competencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Compra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConfiaAbsolutamente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConfiaModeradamente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Confiabilidade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Confiado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Confiador"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Confianca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Confianca2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConfiancaNeutra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConfiancaTraida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConfiancaValidada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Constancia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Credibilidade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CrencaAnterior"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CrencaAtual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DesconfiaAbsolutamente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DesconfiaModeradamente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Errada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fornecer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Honestidade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Integridade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Justica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mediacao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediadorDeConfianca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MedioRisco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meltech"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Orgain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Previsibilidade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Producao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Produtor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Produtor2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reboucas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transporte"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Atividade"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#tarefaImpacta"/>
+            <Class IRI="#Decisao"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AtorComposto"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AtorComposto"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#assume"/>
+                <Class IRI="#Confiado"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#desempenhaAtividade"/>
+                <Class IRI="#Comprar"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#desempenhaAtividade"/>
+                <Class IRI="#Fornecer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#desempenhaAtividade"/>
+                <Class IRI="#Mediacao"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#desempenhaAtividade"/>
+                <Class IRI="#Transportar"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDepositada"/>
+                <Class IRI="#Confianca"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AvaliacaoDaConfianca"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AvaliacaoDaConfianca"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#avalia"/>
+                <Class IRI="#Atividade"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#avalia"/>
+                <Class IRI="#Ator"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#avalia"/>
+                <Class IRI="#Confianca"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#avalia"/>
+                <Class IRI="#Papel"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AvaliacaoDaConfianca"/>
+        <ObjectUnionOf>
+            <Class IRI="#ConfiaAbsolutamente"/>
+            <Class IRI="#ConfiaModeradamente"/>
+            <Class IRI="#ConfiancaNeutra"/>
+            <Class IRI="#DesconfiaAbsolutamente"/>
+            <Class IRI="#DesconfiaModeradamente"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AvaliacaoRisco"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AvaliacaoRisco"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#avalia"/>
+                <Class IRI="#Atividade"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#avalia"/>
+                <Class IRI="#Confianca"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AvaliacaoRisco"/>
+        <ObjectUnionOf>
+            <Class IRI="#AltoRisco"/>
+            <Class IRI="#BaixoRisco"/>
+            <Class IRI="#MedioRisco"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Comprar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Comprar"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDe"/>
+                <Class IRI="#Confianca"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDesempenhadaPor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#AtorComposto"/>
+                    <Class IRI="#Elementar"/>
+                    <Class IRI="#SegmentoDeMercado"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tarefaImpacta"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Certa"/>
+                    <Class IRI="#Errada"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Confianca"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Confianca"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#estima"/>
+                <Class IRI="#AtorComposto"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#estima"/>
+                <Class IRI="#Elementar"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#estima"/>
+                <Class IRI="#SegmentoDeMercado"/>
+            </ObjectSomeValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#tem"/>
+                <Class IRI="#Benevolencia"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#tem"/>
+                <Class IRI="#BoaVontade"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#tem"/>
+                <Class IRI="#Competencia"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#tem"/>
+                <Class IRI="#Confiabilidade"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#tem"/>
+                <Class IRI="#Constancia"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#tem"/>
+                <Class IRI="#Credibilidade"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#tem"/>
+                <Class IRI="#Honestidade"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#tem"/>
+                <Class IRI="#Integridade"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#tem"/>
+                <Class IRI="#Justica"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#tem"/>
+                <Class IRI="#Previsibilidade"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ConfiancaTraida"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ConfiancaTraida"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#atualiza"/>
+                <Class IRI="#CrencaAtual"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#corrige"/>
+                <Class IRI="#CrencaAnterior"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ConfiancaValidada"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ConfiancaValidada"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#reforca"/>
+                <Class IRI="#CrencaAnterior"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Elementar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Ator"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#assume"/>
+                <Class IRI="#Confiador"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#deposita"/>
+                <Class IRI="#Confianca"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#desempenhaAtividade"/>
+                <Class IRI="#Producao"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fornecer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Fornecer"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDe"/>
+                <Class IRI="#Confianca"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDesempenhadaPor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#AtorComposto"/>
+                    <Class IRI="#Elementar"/>
+                    <Class IRI="#SegmentoDeMercado"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tarefaImpacta"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Certa"/>
+                    <Class IRI="#Errada"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Mediacao"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Mediacao"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDe"/>
+                <Class IRI="#Confianca"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDesempenhadaPor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#AtorComposto"/>
+                    <Class IRI="#Elementar"/>
+                    <Class IRI="#SegmentoDeMercado"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tarefaImpacta"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Certa"/>
+                    <Class IRI="#Errada"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Producao"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Producao"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDe"/>
+                <Class IRI="#Confianca"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDesempenhadaPor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#AtorComposto"/>
+                    <Class IRI="#Elementar"/>
+                    <Class IRI="#SegmentoDeMercado"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tarefaImpacta"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Certa"/>
+                    <Class IRI="#Errada"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SegmentoDeMercado"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#SegmentoDeMercado"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#assume"/>
+                <Class IRI="#Confiado"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#desempenhaAtividade"/>
+                <Class IRI="#Comprar"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#desempenhaAtividade"/>
+                <Class IRI="#Fornecer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#desempenhaAtividade"/>
+                <Class IRI="#Mediacao"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#desempenhaAtividade"/>
+                <Class IRI="#Transportar"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDepositada"/>
+                <Class IRI="#Confianca"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Transportar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Transportar"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDe"/>
+                <Class IRI="#Confianca"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDesempenhadaPor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#AtorComposto"/>
+                    <Class IRI="#Elementar"/>
+                    <Class IRI="#SegmentoDeMercado"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#tarefaImpacta"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Certa"/>
+                    <Class IRI="#Errada"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AltoRisco"/>
+        <Class IRI="#AvaliacaoRisco"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtorComposto"/>
+        <Class IRI="#Ator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AvaliacaoDaConfianca"/>
+        <Class IRI="#Avaliacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AvaliacaoRisco"/>
+        <Class IRI="#Avaliacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaixoRisco"/>
+        <Class IRI="#AvaliacaoRisco"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Benevolencia"/>
+        <Class IRI="#Dimensao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoaVontade"/>
+        <Class IRI="#Dimensao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certa"/>
+        <Class IRI="#Decisao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Competencia"/>
+        <Class IRI="#Dimensao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comprar"/>
+        <Class IRI="#Atividade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfiaAbsolutamente"/>
+        <Class IRI="#AvaliacaoDaConfianca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfiaModeradamente"/>
+        <Class IRI="#AvaliacaoDaConfianca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confiabilidade"/>
+        <Class IRI="#Dimensao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confiado"/>
+        <Class IRI="#Papel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confiador"/>
+        <Class IRI="#Papel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confianca"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#eAvaliadaPor"/>
+            <Class IRI="#Avaliacao"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfiancaNeutra"/>
+        <Class IRI="#AvaliacaoDaConfianca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfiancaTraida"/>
+        <Class IRI="#Confianca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfiancaValidada"/>
+        <Class IRI="#Confianca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Constancia"/>
+        <Class IRI="#Dimensao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Credibilidade"/>
+        <Class IRI="#Dimensao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrencaAnterior"/>
+        <Class IRI="#Crenca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrencaAtual"/>
+        <Class IRI="#Crenca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesconfiaAbsolutamente"/>
+        <Class IRI="#AvaliacaoDaConfianca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesconfiaModeradamente"/>
+        <Class IRI="#AvaliacaoDaConfianca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Errada"/>
+        <Class IRI="#Decisao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fornecer"/>
+        <Class IRI="#Atividade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honestidade"/>
+        <Class IRI="#Dimensao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Integridade"/>
+        <Class IRI="#Dimensao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Justica"/>
+        <Class IRI="#Dimensao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mediacao"/>
+        <Class IRI="#Atividade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediadorDeConfianca"/>
+        <Class IRI="#Papel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedioRisco"/>
+        <Class IRI="#AvaliacaoRisco"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Previsibilidade"/>
+        <Class IRI="#Dimensao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producao"/>
+        <Class IRI="#Atividade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SegmentoDeMercado"/>
+        <Class IRI="#Ator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transportar"/>
+        <Class IRI="#Atividade"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AltoRisco"/>
+        <Class IRI="#BaixoRisco"/>
+        <Class IRI="#MedioRisco"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Certa"/>
+        <Class IRI="#Errada"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Comprar"/>
+        <Class IRI="#Fornecer"/>
+        <Class IRI="#Producao"/>
+        <Class IRI="#Transportar"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConfiaAbsolutamente"/>
+        <Class IRI="#ConfiaModeradamente"/>
+        <Class IRI="#ConfiancaNeutra"/>
+        <Class IRI="#DesconfiaAbsolutamente"/>
+        <Class IRI="#DesconfiaModeradamente"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Confiado"/>
+        <Class IRI="#Confiador"/>
+        <Class IRI="#MediadorDeConfianca"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConfiancaTraida"/>
+        <Class IRI="#ConfiancaValidada"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CrencaAnterior"/>
+        <Class IRI="#CrencaAtual"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AltoRisco"/>
+        <NamedIndividual IRI="#AltoRisco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BaixoRisco"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Benevolencia"/>
+        <NamedIndividual IRI="#Benevolencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoaVontade"/>
+        <NamedIndividual IRI="#BoaVontade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Certa"/>
+        <NamedIndividual IRI="#Certa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Decisao"/>
+        <NamedIndividual IRI="#Certa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Competencia"/>
+        <NamedIndividual IRI="#Competencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atividade"/>
+        <NamedIndividual IRI="#Compra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comprar"/>
+        <NamedIndividual IRI="#Compra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConfiaAbsolutamente"/>
+        <NamedIndividual IRI="#ConfiaAbsolutamente"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConfiaModeradamente"/>
+        <NamedIndividual IRI="#ConfiaModeradamente"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Confiabilidade"/>
+        <NamedIndividual IRI="#Confiabilidade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Confiado"/>
+        <NamedIndividual IRI="#Confiado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Confiador"/>
+        <NamedIndividual IRI="#Confiador"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Confianca"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Confianca"/>
+        <NamedIndividual IRI="#Confianca2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConfiancaNeutra"/>
+        <NamedIndividual IRI="#ConfiancaNeutra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConfiancaTraida"/>
+        <NamedIndividual IRI="#ConfiancaTraida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConfiancaValidada"/>
+        <NamedIndividual IRI="#ConfiancaValidada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Constancia"/>
+        <NamedIndividual IRI="#Constancia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Credibilidade"/>
+        <NamedIndividual IRI="#Credibilidade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crenca"/>
+        <NamedIndividual IRI="#CrencaAnterior"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CrencaAnterior"/>
+        <NamedIndividual IRI="#CrencaAnterior"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crenca"/>
+        <NamedIndividual IRI="#CrencaAtual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CrencaAtual"/>
+        <NamedIndividual IRI="#CrencaAtual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DesconfiaAbsolutamente"/>
+        <NamedIndividual IRI="#DesconfiaAbsolutamente"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DesconfiaModeradamente"/>
+        <NamedIndividual IRI="#DesconfiaModeradamente"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Decisao"/>
+        <NamedIndividual IRI="#Errada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Errada"/>
+        <NamedIndividual IRI="#Errada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atividade"/>
+        <NamedIndividual IRI="#Fornecer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fornecer"/>
+        <NamedIndividual IRI="#Fornecer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honestidade"/>
+        <NamedIndividual IRI="#Honestidade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Integridade"/>
+        <NamedIndividual IRI="#Integridade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Justica"/>
+        <NamedIndividual IRI="#Justica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atividade"/>
+        <NamedIndividual IRI="#Mediacao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mediacao"/>
+        <NamedIndividual IRI="#Mediacao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#AtorComposto"/>
+            <Class IRI="#Elementar"/>
+            <Class IRI="#SegmentoDeMercado"/>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#MediadorDeConfianca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedioRisco"/>
+        <NamedIndividual IRI="#MedioRisco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Elementar"/>
+        <NamedIndividual IRI="#Meltech"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SegmentoDeMercado"/>
+        <NamedIndividual IRI="#Orgain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Previsibilidade"/>
+        <NamedIndividual IRI="#Previsibilidade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producao"/>
+        <NamedIndividual IRI="#Producao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AtorComposto"/>
+        <NamedIndividual IRI="#Produtor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AtorComposto"/>
+        <NamedIndividual IRI="#Produtor2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SegmentoDeMercado"/>
+        <NamedIndividual IRI="#Reboucas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atividade"/>
+        <NamedIndividual IRI="#Transporte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transportar"/>
+        <NamedIndividual IRI="#Transporte"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#riscoImpacta"/>
+        <NamedIndividual IRI="#AltoRisco"/>
+        <NamedIndividual IRI="#Certa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#riscoImpacta"/>
+        <NamedIndividual IRI="#AltoRisco"/>
+        <NamedIndividual IRI="#Errada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#riscoImpacta"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+        <NamedIndividual IRI="#Certa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#riscoImpacta"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+        <NamedIndividual IRI="#Errada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Compra"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eDe"/>
+        <NamedIndividual IRI="#Compra"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tarefaImpacta"/>
+        <NamedIndividual IRI="#Compra"/>
+        <NamedIndividual IRI="#Certa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+        <NamedIndividual IRI="#Confiado"/>
+        <NamedIndividual IRI="#Confiado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Confiado"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eEstimada"/>
+        <NamedIndividual IRI="#Confiado"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Confiador"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eEstimada"/>
+        <NamedIndividual IRI="#Confiador"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estima"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#Reboucas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#Benevolencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#BoaVontade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#Competencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#Confiabilidade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#Constancia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#Credibilidade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#Honestidade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#Integridade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#Justica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca"/>
+        <NamedIndividual IRI="#Previsibilidade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Confianca2"/>
+        <NamedIndividual IRI="#DesconfiaModeradamente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Confianca2"/>
+        <NamedIndividual IRI="#MedioRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca2"/>
+        <NamedIndividual IRI="#Benevolencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca2"/>
+        <NamedIndividual IRI="#Competencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca2"/>
+        <NamedIndividual IRI="#Constancia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca2"/>
+        <NamedIndividual IRI="#Credibilidade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tem"/>
+        <NamedIndividual IRI="#Confianca2"/>
+        <NamedIndividual IRI="#Previsibilidade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atualiza"/>
+        <NamedIndividual IRI="#ConfiancaTraida"/>
+        <NamedIndividual IRI="#CrencaAtual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#corrige"/>
+        <NamedIndividual IRI="#ConfiancaTraida"/>
+        <NamedIndividual IRI="#CrencaAnterior"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reforca"/>
+        <NamedIndividual IRI="#ConfiancaValidada"/>
+        <NamedIndividual IRI="#CrencaAnterior"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Fornecer"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eDe"/>
+        <NamedIndividual IRI="#Fornecer"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tarefaImpacta"/>
+        <NamedIndividual IRI="#Fornecer"/>
+        <NamedIndividual IRI="#Certa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Mediacao"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eDe"/>
+        <NamedIndividual IRI="#Mediacao"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tarefaImpacta"/>
+        <NamedIndividual IRI="#Mediacao"/>
+        <NamedIndividual IRI="#Certa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assume"/>
+        <NamedIndividual IRI="#MediadorDeConfianca"/>
+        <NamedIndividual IRI="#MediadorDeConfianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+        <NamedIndividual IRI="#MediadorDeConfianca"/>
+        <NamedIndividual IRI="#Mediacao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#MediadorDeConfianca"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eEstimada"/>
+        <NamedIndividual IRI="#MediadorDeConfianca"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#riscoImpacta"/>
+        <NamedIndividual IRI="#MedioRisco"/>
+        <NamedIndividual IRI="#Certa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#riscoImpacta"/>
+        <NamedIndividual IRI="#MedioRisco"/>
+        <NamedIndividual IRI="#Errada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assume"/>
+        <NamedIndividual IRI="#Meltech"/>
+        <NamedIndividual IRI="#Confiador"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#deposita"/>
+        <NamedIndividual IRI="#Meltech"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+        <NamedIndividual IRI="#Meltech"/>
+        <NamedIndividual IRI="#Producao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Meltech"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assume"/>
+        <NamedIndividual IRI="#Orgain"/>
+        <NamedIndividual IRI="#Confiado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+        <NamedIndividual IRI="#Orgain"/>
+        <NamedIndividual IRI="#Compra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Orgain"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eEstimada"/>
+        <NamedIndividual IRI="#Orgain"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Producao"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eDe"/>
+        <NamedIndividual IRI="#Producao"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tarefaImpacta"/>
+        <NamedIndividual IRI="#Producao"/>
+        <NamedIndividual IRI="#Certa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assume"/>
+        <NamedIndividual IRI="#Produtor"/>
+        <NamedIndividual IRI="#Confiado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+        <NamedIndividual IRI="#Produtor"/>
+        <NamedIndividual IRI="#Fornecer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Produtor"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eEstimada"/>
+        <NamedIndividual IRI="#Produtor"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assume"/>
+        <NamedIndividual IRI="#Produtor2"/>
+        <NamedIndividual IRI="#Confiado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+        <NamedIndividual IRI="#Produtor2"/>
+        <NamedIndividual IRI="#Fornecer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Produtor2"/>
+        <NamedIndividual IRI="#MedioRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eEstimada"/>
+        <NamedIndividual IRI="#Produtor2"/>
+        <NamedIndividual IRI="#Confianca2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assume"/>
+        <NamedIndividual IRI="#Reboucas"/>
+        <NamedIndividual IRI="#Confiado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+        <NamedIndividual IRI="#Reboucas"/>
+        <NamedIndividual IRI="#Transporte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Reboucas"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eEstimada"/>
+        <NamedIndividual IRI="#Reboucas"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <NamedIndividual IRI="#Transporte"/>
+        <NamedIndividual IRI="#BaixoRisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eDe"/>
+        <NamedIndividual IRI="#Transporte"/>
+        <NamedIndividual IRI="#Confianca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tarefaImpacta"/>
+        <NamedIndividual IRI="#Transporte"/>
+        <NamedIndividual IRI="#Certa"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#assume"/>
+        <ObjectProperty IRI="#eAssumidoPor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#atualiza"/>
+        <ObjectProperty IRI="#eAtualizadaPor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#avalia"/>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#corrige"/>
+        <ObjectProperty IRI="#eCorrigidaPor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#deposita"/>
+        <ObjectProperty IRI="#eDepositada"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+        <ObjectProperty IRI="#eDesempenhadaPor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#eContidaEm"/>
+        <ObjectProperty IRI="#tem"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#eEstimada"/>
+        <ObjectProperty IRI="#estima"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#eReforcadaPor"/>
+        <ObjectProperty IRI="#reforca"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#riscoEImpactadoPor"/>
+        <ObjectProperty IRI="#riscoImpacta"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#tarefaImpacta"/>
+        <ObjectProperty IRI="#traefaEImpactadaPor"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assume"/>
+        <Class IRI="#Ator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#atualiza"/>
+        <Class IRI="#ConfiancaTraida"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#avalia"/>
+        <Class IRI="#Avaliacao"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#corrige"/>
+        <Class IRI="#ConfiancaTraida"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deposita"/>
+        <Class IRI="#Elementar"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+        <Class IRI="#Ator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#eAtualizadaPor"/>
+        <Class IRI="#Avaliacao"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#eDe"/>
+        <Class IRI="#Atividade"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estima"/>
+        <Class IRI="#Confianca"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#reforca"/>
+        <Class IRI="#ConfiancaValidada"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#riscoImpacta"/>
+        <Class IRI="#AvaliacaoRisco"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tarefaImpacta"/>
+        <Class IRI="#Atividade"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tem"/>
+        <Class IRI="#Confianca"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assume"/>
+        <Class IRI="#Papel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#atualiza"/>
+        <Class IRI="#CrencaAtual"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#avalia"/>
+        <Class IRI="#Atividade"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#avalia"/>
+        <Class IRI="#Ator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#avalia"/>
+        <Class IRI="#Confianca"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#avalia"/>
+        <Class IRI="#Papel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#corrige"/>
+        <Class IRI="#CrencaAnterior"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deposita"/>
+        <Class IRI="#Confianca"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#desempenhaAtividade"/>
+        <Class IRI="#Atividade"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#eAtualizadaPor"/>
+        <Class IRI="#Confianca"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <Class IRI="#AvaliacaoDaConfianca"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#eAvaliadaPor"/>
+        <Class IRI="#AvaliacaoRisco"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#eDe"/>
+        <Class IRI="#Confianca"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estima"/>
+        <Class IRI="#Ator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reforca"/>
+        <Class IRI="#CrencaAnterior"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#riscoImpacta"/>
+        <Class IRI="#Decisao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tarefaImpacta"/>
+        <Class IRI="#Decisao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tem"/>
+        <Class IRI="#Dimensao"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dimensao</IRI>
+        <Literal>De acordo com Chowdhury (2012), a confiança tem dimensões que definem osconceitos necessários para medir e construir a confiança, são eles; benevolência, boa vontade,competência, confiabilidade, constância, credibilidade, honestidade, integridade, justiça eprevisibilidade.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
